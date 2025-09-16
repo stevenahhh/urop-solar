@@ -1,13 +1,10 @@
 # Physics-Informed Random Forest SSA-CNN-LSTM 프로젝트
 
----
-
 ## 환경 설정
 
 1. Miniconda/Anaconda 설치  
 2. 필요 시 CUDA, cuDNN 설치 (WSL은 Windows 드라이버와 연동됨)
 
----
 
 ## 가상환경 및 패키지
 
@@ -17,7 +14,7 @@ conda activate tf-gpu
 pip install tensorflow==2.19.0 jupyterlab
 ```
 
----
+
 
 ## 실행 방법
 
@@ -32,7 +29,7 @@ jupyter lab
 3. 마지막 셀만 확인
 4. 데이터: `full-data.csv`
 
----
+
 
 ## 파일 위치
 
@@ -42,8 +39,6 @@ Windows에서 파일 복사 경로:
 ```bash
 cd ~/urop-solar
 ```
-
----
 
 ## VSCode
 
