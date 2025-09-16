@@ -1,0 +1,48 @@
+2025-08-14 17:32:14,401 - INFO - ===== New Run Initialized: output/run_20250814_173214 =====
+2025-08-14 17:32:14,402 - INFO - Loading data from: full-data.csv
+2025-08-14 17:32:15,239 - INFO - Data preprocessed: 952251 rows
+2025-08-14 17:32:15,240 - INFO - Physics coefficient optimization (gp_minimize, calls=30)
+2025-08-14 17:32:20,005 - INFO - Physics opt done. Best coeffs: {'k': 0.5, 'h0': 10.0, 'c': 0.2, 'alpha': 0.1, 'beta': 0.5}, MSE: 5.756884
+2025-08-14 17:32:20,182 - INFO - PI+RF BayesSearch (n_iter=20)
+2025-08-14 17:47:23,326 - INFO - Best RF params: OrderedDict([('max_depth', 9), ('max_features', 'log2'), ('max_samples', 0.7262147896381759), ('min_samples_leaf', 9), ('min_samples_split', 14), ('n_estimators', 118)])
+2025-08-14 17:47:23,349 - INFO - Saved RF model -> output/run_20250814_173214/checkpoints/rf_model.joblib
+2025-08-14 17:47:25,109 - INFO - [PI+RF Train (transformed)] MSE=1.157338, RMSE=1.075796, MAE=0.803959, R2=0.547439
+2025-08-14 17:47:25,112 - INFO - [PI+RF Test  (transformed)] MSE=1.751072, RMSE=1.323281, MAE=1.023977, R2=0.435894
+2025-08-14 17:47:25,120 - INFO - [PI+RF Test (original Kwh)] MSE=2936.938774, RMSE=54.193531, MAE=31.577389, R2=0.106125
+2025-08-14 17:47:37,030 - INFO - Sequence shapes: (666533, 60, 7), (190438, 60, 7), (95220, 60, 7)
+2025-08-14 17:47:37,034 - INFO - Alpha fixed to 0.000000 (SEARCH_ALPHA=False)
+2025-08-14 17:47:37,035 - INFO - Final training with alpha=0.000000 (epochs=200, patience=15)
+2025-08-14 18:00:06,327 - INFO - Saved final model weights -> output/run_20250814_173214/checkpoints/final_model_alpha_0.0000.weights.h5
+2025-08-14 18:00:06,328 - INFO - Evaluating final model on test set...
+2025-08-14 18:00:14,698 - INFO - ===== Final SSA-CNN-LSTM Model Performance =====
+2025-08-14 18:00:14,703 - INFO - [SSA-CNN-LSTM Test (transformed)] MSE=0.000308, RMSE=0.017544, MAE=0.011405, R2=0.999857
+2025-08-14 18:00:14,706 - INFO - [SSA-CNN-LSTM Test (original Kwh)] MSE=1.975632, RMSE=1.405572, MAE=0.322625, R2=0.998685
+2025-08-14 18:00:14,715 - INFO - Saved final test metrics -> output/run_20250814_173214/logs/final_test_metrics_alpha_0.0000.csv
+2025-08-14 18:00:15,120 - INFO - Saved predictions -> output/run_20250814_173214/logs/predictions_alpha_0.0000.csv
+2025-08-14 18:00:15,518 - INFO - Saved scaled prediction plot -> output/run_20250814_173214/logs/scaled_prediction_comparison_alpha_0.0000.png
+2025-08-14 18:00:15,838 - INFO - Saved kWh prediction plot -> output/run_20250814_173214/logs/kwh_predictions_alpha_0.0000.png
+2025-08-14 18:00:15,839 - INFO - Pipeline finished successfully.
+2025-08-18 18:37:19,022 - INFO - ===== New Run Initialized: output/run_20250818_183719 =====
+2025-08-18 18:37:19,027 - INFO - Loading data from: full-data.csv
+2025-08-18 18:37:20,239 - INFO - Data preprocessed: 952251 rows
+2025-08-18 18:37:20,240 - INFO - Physics coefficient optimization (gp_minimize, calls=30)
+2025-08-18 18:37:25,950 - INFO - Physics opt done. Best coeffs: {'k': 0.5, 'h0': 10.0, 'c': 0.2, 'alpha': 0.1, 'beta': 0.5}, MSE: 5.756884
+2025-08-18 18:37:26,245 - INFO - PI+RF BayesSearch (n_iter=20)
+2025-08-18 18:52:19,023 - INFO - Best RF params: OrderedDict([('max_depth', 9), ('max_features', 'log2'), ('max_samples', 0.7262147896381759), ('min_samples_leaf', 9), ('min_samples_split', 14), ('n_estimators', 118)])
+2025-08-18 18:52:19,052 - INFO - Saved RF model -> output/run_20250818_183719/checkpoints/rf_model.joblib
+2025-08-18 18:52:20,941 - INFO - [PI+RF Train (transformed)] MSE=1.157338, RMSE=1.075796, MAE=0.803959, R2=0.547439
+2025-08-18 18:52:20,955 - INFO - [PI+RF Test  (transformed)] MSE=1.751072, RMSE=1.323281, MAE=1.023977, R2=0.435894
+2025-08-18 18:52:20,961 - INFO - [PI+RF Test (original Kwh)] MSE=2936.938774, RMSE=54.193531, MAE=31.577389, R2=0.106125
+2025-08-18 18:52:35,215 - INFO - Sequence shapes: (666533, 60, 7), (190438, 60, 7), (95220, 60, 7)
+2025-08-18 18:52:35,228 - INFO - Alpha fixed to 0.000000 (SEARCH_ALPHA=False)
+2025-08-18 18:52:35,229 - INFO - Final training with alpha=0.000000 (epochs=200, patience=15)
+2025-08-18 19:03:19,233 - INFO - Saved final model weights -> output/run_20250818_183719/checkpoints/final_model_alpha_0.0000.weights.h5
+2025-08-18 19:03:19,234 - INFO - Evaluating final model on test set...
+2025-08-18 19:03:27,723 - INFO - ===== Final SSA-CNN-LSTM Model Performance =====
+2025-08-18 19:03:27,731 - INFO - [SSA-CNN-LSTM Test (transformed)] MSE=0.000523, RMSE=0.022861, MAE=0.017746, R2=0.999757
+2025-08-18 19:03:27,733 - INFO - [SSA-CNN-LSTM Test (original Kwh)] MSE=1.484682, RMSE=1.218475, MAE=0.348014, R2=0.999012
+2025-08-18 19:03:27,743 - INFO - Saved final test metrics -> output/run_20250818_183719/logs/final_test_metrics_alpha_0.0000.csv
+2025-08-18 19:03:28,161 - INFO - Saved predictions -> output/run_20250818_183719/logs/predictions_alpha_0.0000.csv
+2025-08-18 19:03:28,577 - INFO - Saved scaled prediction plot -> output/run_20250818_183719/logs/scaled_prediction_comparison_alpha_0.0000.png
+2025-08-18 19:03:28,894 - INFO - Saved kWh prediction plot -> output/run_20250818_183719/logs/kwh_predictions_alpha_0.0000.png
+2025-08-18 19:03:28,894 - INFO - Pipeline finished successfully.

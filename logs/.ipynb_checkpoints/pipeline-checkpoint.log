@@ -1,0 +1,79 @@
+2025-08-13 14:31:10,330 - INFO - Loading data from: D:/Thesis/Thesis.csv
+2025-08-13 14:31:55,204 - INFO - Loading data from: full-data.csv
+2025-08-13 14:31:55,755 - INFO - Using date column: DateTime
+2025-08-13 14:31:55,898 - INFO - Detected target column: Kwh
+2025-08-13 14:31:55,998 - INFO - Data preprocessed: 952251 rows remain
+2025-08-13 14:31:55,999 - INFO - Starting physics parameter optimization (gp_minimize, 30 calls)...
+2025-08-13 14:32:00,759 - INFO - Physics opt done. Best coeffs: {'k': 0.5, 'h0': 10.0, 'c': 0.2, 'alpha': 0.1, 'beta': 0.5}, MSE: 5.756884
+2025-08-13 14:32:00,914 - INFO - Starting PI+RF Bayesian optimization (n_iter=20)...
+2025-08-13 14:47:13,882 - INFO - Best RF params: OrderedDict([('max_depth', 9), ('max_features', 'log2'), ('max_samples', 0.7262147896381759), ('min_samples_leaf', 9), ('min_samples_split', 14), ('n_estimators', 118)])
+2025-08-13 14:47:13,907 - INFO - Saved RF model to checkpoints/rf_model.joblib
+2025-08-13 14:47:15,742 - INFO - [PI+RF Train (transformed)] MSE=1.157338, RMSE=1.075796, MAE=0.803959, R2=0.547439
+2025-08-13 14:47:15,745 - INFO - [PI+RF Test  (transformed)] MSE=1.751072, RMSE=1.323281, MAE=1.023977, R2=0.435894
+2025-08-13 14:47:15,751 - INFO - [PI+RF Test (original Kwh)] MSE=2936.938774, RMSE=54.193531, MAE=31.577389, R2=0.106125
+2025-08-13 14:47:27,494 - INFO - Sequence shapes: (666533, 60, 7), (190438, 60, 7), (95220, 60, 7)
+2025-08-13 14:47:27,497 - INFO - Starting alpha search (gp_minimize, calls=8) using warm training (epochs=60)...
+2025-08-13 14:54:37,531 - INFO - Loading data from: full-data.csv
+2025-08-13 14:54:38,050 - INFO - Using date column: DateTime
+2025-08-13 14:54:38,192 - INFO - Detected target column: Kwh
+2025-08-13 14:54:38,307 - INFO - Data preprocessed: 952251 rows remain
+2025-08-13 14:54:38,308 - INFO - Starting physics parameter optimization (gp_minimize, 30 calls)...
+2025-08-13 14:54:42,991 - INFO - Physics opt done. Best coeffs: {'k': 0.5, 'h0': 10.0, 'c': 0.2, 'alpha': 0.1, 'beta': 0.5}, MSE: 5.756884
+2025-08-13 14:54:43,149 - INFO - Starting PI+RF Bayesian optimization (n_iter=20)...
+2025-08-13 15:10:08,910 - INFO - Best RF params: OrderedDict([('max_depth', 9), ('max_features', 'log2'), ('max_samples', 0.7262147896381759), ('min_samples_leaf', 9), ('min_samples_split', 14), ('n_estimators', 118)])
+2025-08-13 15:10:08,934 - INFO - Saved RF model to checkpoints/rf_model.joblib
+2025-08-13 15:10:10,799 - INFO - [PI+RF Train (transformed)] MSE=1.157338, RMSE=1.075796, MAE=0.803959, R2=0.547439
+2025-08-13 15:10:10,803 - INFO - [PI+RF Test  (transformed)] MSE=1.751072, RMSE=1.323281, MAE=1.023977, R2=0.435894
+2025-08-13 15:10:10,808 - INFO - [PI+RF Test (original Kwh)] MSE=2936.938774, RMSE=54.193531, MAE=31.577389, R2=0.106125
+2025-08-13 15:10:23,363 - INFO - Sequence shapes: (666533, 60, 7), (190438, 60, 7), (95220, 60, 7)
+2025-08-13 15:10:23,366 - INFO - Starting alpha search (gp_minimize, calls=8) using warm training (epochs=60)...
+2025-08-13 17:56:05,782 - INFO - Loading data from: full-data.csv
+2025-08-13 17:56:06,329 - INFO - Using date column: DateTime
+2025-08-13 17:56:06,473 - INFO - Detected target column: Kwh
+2025-08-13 17:56:06,588 - INFO - Data preprocessed: 952251 rows remain
+2025-08-13 17:56:06,589 - INFO - Starting physics parameter optimization (gp_minimize, 30 calls)...
+2025-08-13 17:56:11,046 - INFO - Physics opt done. Best coeffs: {'k': 0.5, 'h0': 10.0, 'c': 0.2, 'alpha': 0.1, 'beta': 0.5}, MSE: 5.756884
+2025-08-13 17:56:11,200 - INFO - Starting PI+RF Bayesian optimization (n_iter=20)...
+2025-08-13 18:11:23,967 - INFO - Best RF params: OrderedDict([('max_depth', 9), ('max_features', 'log2'), ('max_samples', 0.7262147896381759), ('min_samples_leaf', 9), ('min_samples_split', 14), ('n_estimators', 118)])
+2025-08-13 18:11:23,993 - INFO - Saved RF model to checkpoints/rf_model.joblib
+2025-08-13 18:11:25,793 - INFO - [PI+RF Train (transformed)] MSE=1.157338, RMSE=1.075796, MAE=0.803959, R2=0.547439
+2025-08-13 18:11:25,797 - INFO - [PI+RF Test  (transformed)] MSE=1.751072, RMSE=1.323281, MAE=1.023977, R2=0.435894
+2025-08-13 18:11:25,803 - INFO - [PI+RF Test (original Kwh)] MSE=2936.938774, RMSE=54.193531, MAE=31.577389, R2=0.106125
+2025-08-13 18:11:38,334 - INFO - Sequence shapes: (666533, 60, 7), (190438, 60, 7), (95220, 60, 7)
+2025-08-13 18:11:38,338 - INFO - Starting alpha search (gp_minimize, calls=8) using warm training (epochs=60)...
+2025-08-14 15:07:12,004 - INFO - Loading data from: full-data.csv
+2025-08-14 15:07:12,676 - INFO - Using date column: DateTime
+2025-08-14 15:07:12,916 - INFO - Detected target column: Kwh
+2025-08-14 15:07:13,083 - INFO - Data preprocessed: 952251 rows remain
+2025-08-14 15:07:13,084 - INFO - Starting physics parameter optimization (gp_minimize, 30 calls)...
+2025-08-14 15:07:18,521 - INFO - Physics opt done. Best coeffs: {'k': 0.5, 'h0': 10.0, 'c': 0.2, 'alpha': 0.1, 'beta': 0.5}, MSE: 5.756884
+2025-08-14 15:07:18,746 - INFO - Starting PI+RF Bayesian optimization (n_iter=20)...
+2025-08-14 15:07:29,050 - INFO - Loading data from: full-data.csv
+2025-08-14 15:07:29,656 - INFO - Using date column: DateTime
+2025-08-14 15:07:29,802 - INFO - Detected target column: Kwh
+2025-08-14 15:07:29,921 - INFO - Data preprocessed: 952251 rows remain
+2025-08-14 15:07:29,922 - INFO - Starting physics parameter optimization (gp_minimize, 30 calls)...
+2025-08-14 15:07:34,781 - INFO - Physics opt done. Best coeffs: {'k': 0.5, 'h0': 10.0, 'c': 0.2, 'alpha': 0.1, 'beta': 0.5}, MSE: 5.756884
+2025-08-14 15:07:34,932 - INFO - Starting PI+RF Bayesian optimization (n_iter=20)...
+2025-08-14 15:24:06,271 - INFO - Best RF params: OrderedDict([('max_depth', 9), ('max_features', 'log2'), ('max_samples', 0.7262147896381759), ('min_samples_leaf', 9), ('min_samples_split', 14), ('n_estimators', 118)])
+2025-08-14 15:24:06,298 - INFO - Saved RF model to checkpoints/rf_model.joblib
+2025-08-14 15:24:08,284 - INFO - [PI+RF Train (transformed)] MSE=1.157338, RMSE=1.075796, MAE=0.803959, R2=0.547439
+2025-08-14 15:24:08,290 - INFO - [PI+RF Test  (transformed)] MSE=1.751072, RMSE=1.323281, MAE=1.023977, R2=0.435894
+2025-08-14 15:24:08,299 - INFO - [PI+RF Test (original Kwh)] MSE=2936.938774, RMSE=54.193531, MAE=31.577389, R2=0.106125
+2025-08-14 15:24:22,244 - INFO - Sequence shapes: (666533, 60, 7), (190438, 60, 7), (95220, 60, 7)
+2025-08-14 15:24:22,247 - INFO - Starting alpha search (gp_minimize, calls=8) using warm training (epochs=60)...
+2025-08-14 15:31:29,115 - INFO - Alpha 0.7965 -> best val_loss 0.085173
+2025-08-14 15:37:01,420 - INFO - Alpha 0.1834 -> best val_loss 0.029784
+2025-08-14 15:42:05,200 - INFO - Alpha 0.7797 -> best val_loss 0.084167
+2025-08-14 15:48:50,446 - INFO - Alpha 0.0000 -> best val_loss 0.000014
+2025-08-14 15:57:59,414 - INFO - Alpha 0.4236 -> best val_loss 0.057161
+2025-08-14 16:06:13,230 - INFO - Alpha 1.0000 -> best val_loss 0.096048
+2025-08-14 16:12:45,736 - INFO - Alpha 0.5038 -> best val_loss 0.064360
+2025-08-14 16:18:31,613 - INFO - Alpha 0.9195 -> best val_loss 0.092023
+2025-08-14 16:18:31,701 - INFO - Alpha search done. Best alpha: 0.000000, val_loss: 0.000014
+2025-08-14 16:18:31,702 - INFO - Final training with best_alpha=0.000000 for 200 epochs...
+2025-08-14 16:41:05,235 - INFO - Saved final model weights to checkpoints/final_model_alpha_0.0000.weights.h5
+2025-08-14 16:41:05,236 - INFO - Evaluating final model on test set...
+2025-08-14 16:41:14,789 - INFO - Saved final test metrics to logs/final_test_metrics_alpha_0.0000.csv
+2025-08-14 16:41:15,094 - INFO - Saved predictions to logs/predictions_alpha_0.0000.csv
+2025-08-14 16:41:15,095 - INFO - Pipeline finished successfully.

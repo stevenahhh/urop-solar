@@ -1,0 +1,6 @@
+2025-08-14 17:20:17,928 - INFO - ===== New Run Initialized: output/run_20250814_172017 =====
+2025-08-14 17:20:17,929 - INFO - Loading data from: full-data.csv
+2025-08-14 17:20:18,782 - INFO - Data preprocessed: 952251 rows
+2025-08-14 17:20:18,782 - INFO - Physics coefficient optimization (gp_minimize, calls=30)
+2025-08-14 17:20:23,513 - INFO - Physics opt done. Best coeffs: {'k': 0.5, 'h0': 10.0, 'c': 0.2, 'alpha': 0.1, 'beta': 0.5}, MSE: 5.756884
+2025-08-14 17:20:23,677 - INFO - PI+RF BayesSearch (n_iter=20)
