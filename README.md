@@ -5,7 +5,7 @@
 ## 환경 설정
 
 1. Miniconda/Anaconda 설치  
-2. 필요 시 CUDA, cuDNN 설치 (WSL은 Windows 드라이버와 연동됨)
+2. 필요 시 CUDA, cuDNN 설치 
 
 
 ## 가상환경 및 패키지
