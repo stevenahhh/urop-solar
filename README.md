@@ -1,7 +1,6 @@
 # Physics-Informed Random Forest SSA-CNN-LSTM 프로젝트
 
-## MUST READ:
-**WSL ONLY PROJECT**
+## MUST KNOW: WSL ONLY PROJECT
 
 ## 환경 설정
 
